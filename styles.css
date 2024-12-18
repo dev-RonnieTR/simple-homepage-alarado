@@ -88,11 +88,14 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 1fr var(--hero-img-width);
+  grid-template-rows: auto;
+  grid-template-areas: "text image";
   justify-content: center;
   align-items: center;
 }
 
 .hero__text {
+  grid-area: text;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -123,7 +126,9 @@ main {
   gap: 0.5em;
   line-height: 0; /* Helps align check mark with text*/
 }
-
+.hero__picture {
+  grid-area: image;
+}
 .hero__img {
   width: var(--hero-img-width);
   height: auto;
