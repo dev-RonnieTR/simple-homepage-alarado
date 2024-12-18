@@ -83,6 +83,13 @@ main {
   width: var(--light-dark-button-dimension);
   height: var(--light-dark-button-dimension);
 }
+.menu-button {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  top: -10px;
+}
 
 /* HERO LAYOUT */
 .hero {
@@ -189,12 +196,37 @@ img {
   .hero {
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
-    grid-template-areas: 
-    "image"
-    "text";
+    grid-template-areas:
+      "image"
+      "text";
   }
   .hero__picture {
     display: flex;
     justify-content: center;
+  }
+
+  .navigation {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    top: -10px;
+  }
+
+  .light-dark-mode-button {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    top: -10px;
+  }
+
+  .menu-button {
+    position: static;
+    width: unset;
+    height: unset;
+    background: none;
+    border: none;
+    overflow: visible;
   }
 }
