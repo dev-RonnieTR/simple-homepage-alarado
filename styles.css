@@ -11,12 +11,58 @@
   --font-size-body: 1.125rem;
   --font-size-button: 1rem;
   --font-size-small-text: 0.875rem;
+  --text-underline-offset: 0.4em;
+  --text-decoration-thickness: 0.15em;
   --color-background: #f2f9fe;
   --color-check-mark: #4ca154;
+  --color-text: #223344;
   --color-1: #2a4dd0;
 }
 
 html {
   font-family: "Poppins", serif;
   font-size: 16px;
+  color: var(--color-text);
+}
+
+/* HEADER LAYOUT */
+header {
+  padding: 0 3%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: max(1rem, 3vw);
+
+  list-style: none;
+}
+
+/* TYPOGRAPHY */
+.logo__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navigation__item {
+  font-size: var(--font-size-small-text);
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.navigation__item--active {
+  color: var(--color-1);
+  text-decoration: underline;
+  text-underline-offset: var(--text-underline-offset);
+  text-decoration-thickness: var(--text-decoration-thickness);
 }
