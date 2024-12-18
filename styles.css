@@ -23,6 +23,7 @@
     24px,
     1.5rem
   ); /*1.5rem ensures that it will enlarge when the html font-size enlarges as well in the media queries*/
+  --hero-img-width: clamp(365px, 45vw, 730px);
 }
 
 html {
@@ -76,6 +77,11 @@ header {
 }
 
 /* HERO LAYOUT */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr var(--hero-img-width);
+}
+
 .hero__text {
   display: flex;
   flex-direction: column;
@@ -101,6 +107,11 @@ header {
   align-items: center;
   gap: 0.5em;
   line-height: 0; /* Helps align check mark with text*/
+}
+
+.hero__img {
+  width: var(--hero-img-width);
+  height: auto;
 }
 /* MODULES */
 picture,
