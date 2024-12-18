@@ -29,10 +29,15 @@ html {
   color: var(--color-text);
 }
 
+body {
+  width: min(100%, 1920px);
+  margin: auto;
+}
+
 /* HEADER LAYOUT */
 header {
-  padding: 0 3%;
-
+  min-height: 7vh;
+  padding: 0 clamp(1rem, 3vw, 4rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
