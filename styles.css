@@ -95,6 +95,7 @@ main {
 
 /* HERO LAYOUT */
 .hero {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr var(--hero-img-width);
   grid-template-rows: auto;
