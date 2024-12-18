@@ -89,6 +89,20 @@ header {
   text-decoration: none;
   border-radius: 0.7em;
 }
+.hero__pro__text::before {
+  content: url(resources/Done_ring_round_fill.svg);
+}
+.hero__pros {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.hero__pro__text {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  line-height: 0; /* Helps align check mark with text*/
+}
 /* MODULES */
 picture,
 img {
