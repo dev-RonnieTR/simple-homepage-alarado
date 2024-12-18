@@ -69,6 +69,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
 
   background-color: #223344;
   border-radius: 30px;
