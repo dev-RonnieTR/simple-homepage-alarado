@@ -87,6 +87,8 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 1fr var(--hero-img-width);
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__text {
