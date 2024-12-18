@@ -32,14 +32,13 @@ html {
 }
 
 body {
-  width: min(100%, 1920px);
+  width: min(90%, 1920px);
   margin: auto;
 }
 
 /* HEADER LAYOUT */
 header {
   min-height: 7vh;
-  padding: 0 clamp(1rem, 3vw, 4rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
