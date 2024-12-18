@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-size-heading: 3.75rem;
+  --font-size-body: 1.125rem;
+  --font-size-button: 1rem;
+  --font-size-small-text: 0.875rem;
+  --color-background: #f2f9fe;
+  --color-check-mark: #4ca154;
+  --color-1: #2a4dd0;
+}
+
+html {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
