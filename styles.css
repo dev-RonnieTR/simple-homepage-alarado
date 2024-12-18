@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: 1px solid red;
 }
 
 :root {
@@ -194,6 +195,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --hero-img-width: clamp(273.75px, 45vw, 365px);
+  }
   .hero {
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
