@@ -36,6 +36,7 @@ html {
 body {
   width: min(90%, 1920px);
   margin: auto;
+  background-color: var(--color-background);
 }
 
 /* HEADER LAYOUT */
