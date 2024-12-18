@@ -23,6 +23,7 @@
     24px,
     1.5rem
   ); /*1.5rem ensures that it will enlarge when the html font-size enlarges as well in the media queries*/
+  --header-height: 7vh;
   --hero-img-width: clamp(365px, 45vw, 730px);
 }
 
@@ -39,9 +40,15 @@ body {
 
 /* HEADER LAYOUT */
 header {
-  min-height: 7vh;
+  min-height: var(--header-height);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+main {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .logo {
