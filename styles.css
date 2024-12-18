@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
 }
 
 :root {
@@ -124,6 +123,7 @@ main {
 }
 .hero__pro__text::before {
   content: url(resources/Done_ring_round_fill.svg);
+  line-height: 0;  /* Helps align check mark with text*/
 }
 .hero__pros {
   display: flex;
@@ -134,7 +134,6 @@ main {
   display: flex;
   align-items: center;
   gap: 0.5em;
-  line-height: 0; /* Helps align check mark with text*/
 }
 .hero__picture {
   grid-area: image;
@@ -184,6 +183,7 @@ img {
 .hero__pro__text {
   font-size: var(--font-size-small-text);
   font-weight: var(--font-weight-bold);
+  border: 1px solid red;
 }
 .hero__button {
   font-size: var(--font-size-button);
