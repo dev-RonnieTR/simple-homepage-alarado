@@ -194,6 +194,12 @@ img {
   font-weight: var(--font-weight-bold);
 }
 
+@media (min-width: 1280px) {
+    html {
+        font-size: clamp(16px, 1.25vw, 20px);
+    }
+}
+
 @media (max-width: 768px) {
   :root {
     --hero-img-width: clamp(273.75px, 45vw, 365px);
