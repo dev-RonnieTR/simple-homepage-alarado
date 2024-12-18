@@ -184,3 +184,17 @@ img {
 .get-live-demo-button {
   font-weight: var(--font-weight-bold);
 }
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "image"
+    "text";
+  }
+  .hero__picture {
+    display: flex;
+    justify-content: center;
+  }
+}
